@@ -79,18 +79,4 @@ This API uses JWT (JSON Web Tokens) for authentication. To access protected rout
 1. **Register a User:** Use the `POST /users/` endpoint.
 2. **Login:** Use the `POST /token` endpoint with your `username` and `password` (form-data) to get an `access_token`.
 3. **Authorize in Swagger UI:** Click the "Authorize" button in Swagger UI, select "BearerAuth", and enter your token in the format `Bearer YOUR_ACCESS_TOKEN`.
-4. **Access Protected Routes:** You can now make requests to protected endpoints like `GET /users/`.
-
-## Project Structure
-
-. (project root)
-├── auth.py             # Authentication logic (password hashing, JWT)
-├── crud.py             # Database Create, Read, Update, Delete operations
-├── database.py         # MongoDB connection setup
-├── main.py             # FastAPI application entry point, routes, and lifespan events
-├── schemas.py          # Pydantic models for request/response validation
-├── routers/            # API route definitions
-│   └── users.py        # User-specific routes
-├── .gitignore          # Specifies intentionally untracked files to ignore
-├── README.md           # Project documentation (this file)
-└── .venv/              # Python virtual environment`
+4. **Access Protected Routes:** You can now make requests to protected endpoints like `GET /users/`
